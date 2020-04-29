@@ -61,3 +61,29 @@ KeyboardInterrupt
 >>> slayers.splitlines()
 ['로미오', '줄리엣']
 >>>
+>>> slayers = "버피*크리스-메리*16"
+>>> fields = slayers.split("*")
+>>> fields
+['버피', '크리스-메리', '16']
+>>> job = fields[1].split("-")
+>>> job
+['크리스', '메리']
+>>>
+>>> def erase_space_from_string(string):
+...     s1 = string.split(" ")
+...     s2 = "".join(s1)
+...     return s2
+...
+>>> start = "안녕*세상*!"
+>>> start.split("*", 1)
+['안녕', '세상*!']
+>>> start.split("*", 1)
+['안녕', '세상*!']
+>>> start.rsplit("*", 1)
+['안녕*세상', '!']
+>>>
+>>> slayers = "로미오 & 줄리엣999"
+>>> slayers.strip("999")
+'로미오 & 줄리엣'
+>>>
+
